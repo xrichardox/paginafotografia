@@ -1,84 +1,159 @@
+* {
+  margin: 0;
+}
 body{
-  background-color: #02010a;
+    background-color: #02010a;
+    font-family: 'Dancing Script', cursive;
 }
-.contenido{
-
-
+#contenido{
+  width:900px;
+  margin: 0 auto;
 }
-header{
-  border-radius: 20px 20px 0px 0px;
+header {
   background-color: #5b7989;
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  padding: 0px 20px 30px 10px;
-  display: flex;
-  flex-grow: 1;
-}
-header h1 {
   color: white;
   text-shadow: 2px 2px 2px #02010a;
+  border-radius: 15px 15px 0px 0px;
+  padding: 2em;
+  font-size: 1.5em;
 }
-nav {
-  height: 100%;
+#menu {
+  color: white;
+  float: right;
+  text-decoration: none;
   display: flex;
-  flex-grow: 1;
-  position: fixed;
-  right: 15px;
-  padding-top: 2em;
 }
-
+#menu1 {
+  padding-right: 1em;
+}
+#menu2 {
+  padding-right: 1em;
+}
+#menu3 {
+  padding-right: 1em;
+}
+nav>ul {
+  list-style: none;
+}
 a {
   text-decoration: none;
   color: white;
 }
 a:hover {
   text-decoration: none;
-  Color:#666666;
+  color:Gray;
 }
 a:visited {
-  color:blue;
-}
-img {
-  width: 50%;
-  display: block;
-  margin: auto;
-  box-shadow: 2px 2px 2px #02010a;
-}
-.img-cen {
-  background: #82c3a6;
-  width:100%;
-  padding-top: 5em;
-  padding-bottom: 3em;
-}
-.inicio, .paisajes, .retratos{
-  padding-left:10px;
-}
-#pais, #retra {
-   box-shadow: 2px 2px 2px #02010a;
-   width: 100%;
-}
-.secundaria{
-  display: flex;
-  flex-direction: row;
-  background:  #d5c75f;
-  border: 1px black;
-  padding:4em;
-}
-.img-sec1, .img-sec2 {
-  width:100%
-}
-@media screen and (max-width:900px) {
-.contenido{
-  margin: auto;
-  width: 90%;
-}
-}
-@media screen and (max-width:480px) {
-.contenido {
-  margin:auto;
-  width: 100%;
+  color: red;
 }
 
+#fotos {
+  box-sizing: border-box;
+  background-color: #82c3a6;
+  padding: 4em;
+}
+#cerezo{
+  box-shadow: 2px 2px 2px #02010a;
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  }
+  #paisaje {
+    height: 50%;
+    display: flex;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+  #retrato {
+    height: 50%
+    display: flex;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+  .imagen {
+  box-shadow: 2px 2px 2px #02010a;
+  }
+
+  #foto2 {
+    box-sizing: border-box;
+    background-color: #d5c75f;
+    border: 1px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 4em;
+  }
+@media screen and (min-width: 960px) {
+  #contenido {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@@media screen and (min width: 480px) {
+  #contenido {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #central {
+    width: 100%;
+  }
+  #paisaje {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  #retrato {
+    width: 100%;
+  }
+  header{
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+#pie1, #pie2, #pie3, #pie4 {
+  width: 100%
+}
+}
+#paisaje:hover{
+  transform: rotate(10deg);
+  transition-duration: 2s;
+}
+#retrato:hover {
+  transform: translate(20px,-5px);
+  transition-duration: 3s;
+}
+footer{
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 2em;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer h2 {
+  text-align: center;
+}
+#pie1{
+  width:100%;
+  display: flex;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+#pie2{
+  width:100%;
+  display: flex;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+#pie3{
+  width:100%;
+  display: flex;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+#pie4{
+  width:100%;
+  display: flex;
+  margin: 0 auto;
+  flex-grow: 1;
 }

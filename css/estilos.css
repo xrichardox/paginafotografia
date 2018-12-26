@@ -1,39 +1,34 @@
+body{
+  background-color: #02010a;
+}
+.contenido{
+
+
+}
 header{
+  border-radius: 20px 20px 0px 0px;
   background-color: #5b7989;
   width: 100%;
   height: 50px;
   position: fixed;
   top: 0;
   padding: 0px 20px 30px 10px;
+  display: flex;
+  flex-grow: 1;
 }
 header h1 {
   color: white;
-}
-footer{
-  clear: both;
-  width: 100%;
-  height: 70px;
-  background-color: rgb(40, 84, 61);
-  position: fixed;
-  bottom: 0;
+  text-shadow: 2px 2px 2px #02010a;
 }
 nav {
   height: 100%;
+  display: flex;
+  flex-grow: 1;
+  position: fixed;
+  right: 15px;
+  padding-top: 2em;
 }
-ul{
-  list-style-type: none;
-  margin:-65px 25px;
-  padding: 0px;
-  overflow: hidden;
-  height: 100%;
-}
-li{
-  float: right;
-  display: block;
-  margin: 0px 5px;
-  padding: 15px 20px;
-  height: 100%;
-  }
+
 a {
   text-decoration: none;
   color: white;
@@ -45,12 +40,45 @@ a:hover {
 a:visited {
   color:blue;
 }
-picture {
+img {
+  width: 50%;
   display: block;
   margin: auto;
+  box-shadow: 2px 2px 2px #02010a;
 }
-.img-central {
+.img-cen {
   background: #82c3a6;
   width:100%;
-  align-items: center;
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+.inicio, .paisajes, .retratos{
+  padding-left:10px;
+}
+#pais, #retra {
+   box-shadow: 2px 2px 2px #02010a;
+   width: 100%;
+}
+.secundaria{
+  display: flex;
+  flex-direction: row;
+  background:  #d5c75f;
+  border: 1px black;
+  padding:4em;
+}
+.img-sec1, .img-sec2 {
+  width:100%
+}
+@media screen and (max-width:900px) {
+.contenido{
+  margin: auto;
+  width: 90%;
+}
+}
+@media screen and (max-width:480px) {
+.contenido {
+  margin:auto;
+  width: 100%;
+}
+
 }

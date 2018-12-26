@@ -8,28 +8,46 @@
     <title>Comenzando con la fotografía</title>
   </head>
   <body>
-    <header>
-      <h1>Comenzando con la fotografía</h1>
-      <nav>
-        <ul>
-          <li><a href="retratos.html"><b>RETRATOS</b></a></li>
-          <li><a href="paisajes.html"><b>PAISAJES</b></a></li>
-          <li><a href="index.html"><b>INICIO</b></a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="img-central">
-      <section >
-        <picture>
-          <source media="(min-width: 720px)" srcset="img/cerezo.jpg">
-          <source media="(min-width: 480px)" srcset="img/cerezo2.jpg">
-          <img src="img/cerezo2.jpg" alt="Flor de cerezo">
-        </picture>
-      </div>
-      </section>
-    <footer>
+    <div class="contenido">
+      <header>
+        <h1>Comenzando con la fotografía</h1>
+        <nav>
+          <div class="inicio"><a href="index.html"><b>INICIO</b></a></div>
+          <div class="paisajes"><a href="paisajes.html"><b>PAISAJES</b></a></div>
+          <div class="retratos"><a href="retratos.html"><b>RETRATOS</b></a></div>
+        </nav>
+      </header>
+      <div class="img-cen">
+        <section>
+          <picture>
+            <source media="(min-width: 900px)" srcset="img/cerezo.jpg">
+            <source media="(min-width: 480px)" srcset="img/cerezo2.jpg">
+            <img id="cerezo"src="img/cerezo2.jpg" alt="Flor de cerezo">
+          </picture>
+        </div>
+        </section>
+        <section>
+        <div class="secundaria">
+          <div class="img-sec1">
+            <picture class="pais">
+              <source media="(min-width 900px)" srcset="img/paisaje.jpg">
+              <source media="(min-width: 480px)" srcset="img/paisaje2.jpg">
+                <img id="paisaje"src="img/paisaje2.jpg" alt="Paisaje">
+            </picture>
+            </div>
+            <div class="img-sec2">
+            <picture class="retra">
+              <source media="(min-width 900px)" srcset="img/retrato.jpg">
+              <source media="(min-width: 480px)" srcset="img/retrato2.jpg">
+                <img id="paisaje"src="img/retrato2.jpg" alt="Retrato">
+            </picture>
+          </div>
+        </div>
+        </section>
+        <div>
+      <footer>
 
-    </footer>
-
+      </footer>
+    </div>
   </body>
 </html>

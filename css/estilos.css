@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 body{
     background-color: #02010a;
@@ -10,40 +11,45 @@ body{
   margin: 0 auto;
 }
 header {
-  background-color: #5b7989;
-  color: white;
-  text-shadow: 2px 2px 2px #02010a;
+  width: 100%;
+  background: #5b7989;
   border-radius: 15px 15px 0px 0px;
-  padding: 2em;
-  font-size: 1.5em;
-  display: block;
-  text-align: left;
-  position: relative;
+  height: 130px;
 }
-.title {
-  display: inline-block;
-  max-width: 100%;
-  width: 700px;
-  text-align: left;
-}
-.menu-bar{
-  display: inline-block;
-  max-width: 100%;
-  float: right;
-}
-#menu {
-  color: white;
-  text-decoration: none;
+.ancho {
+  width: 95%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  height: 130px;
 }
-#menu1 {
-  padding-right: 1em;
+.title{
+  width:30%;
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px #02010a;
+  height: 130px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: block;
 }
-#menu2 {
-  padding-right: 1em;
+nav{
+  width: 70%;
+  height: 130px;
+  text-align: right;
+  padding-top: 40px;
+  box-sizing: border-box;
+  display: block;
+
 }
-#menu3 {
-  padding-right: 1em;
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  font-size: 25px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 nav>ul {
   list-style: none;
@@ -192,18 +198,44 @@ a:visited {
   }
 
 
-@media screen and (min-width: 960px) {
-  #contenido {
-    width: 90%;
-    margin: 0 auto;
+  @media screen and (min-width: 960px) {
+    #contenido {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
-}
-@@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   #contenido {
     width: 100%;
     margin: 0 auto;
   }
+  header{
+    height: 200px;
+  }
+  .ancho {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 250px;
+    justify-content: center;
+    width: 100%
+  }
 
+  .title{
+    width: 100%;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  nav {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
   #central {
     width: 100%;
   }
@@ -213,36 +245,6 @@ a:visited {
   }
   #retrato {
     width: 100%;
-  }
-  header{
-    display:inline-block;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-  }
- #title{
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    display: block;
-    float: none;
-  }
-  #menu-bar{
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    float: none;
-    text-align: center;
-  }
-  nav {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    position: relative;
-  }
-  h1 {
-    text-align: center;
   }
 .pie1{
   width: 100%;

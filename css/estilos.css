@@ -65,7 +65,9 @@ a:hover {
 a:visited {
   color: red;
 }
-
+a:active {
+  color: blue;
+}
 #fotos {
   box-sizing: border-box;
   background-color: #82c3a6;

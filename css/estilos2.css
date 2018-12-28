@@ -232,6 +232,9 @@ a:active {
     display: flex;
     flex-direction: column;
   }
+  .secun {
+    width:100%;
+  }
   #central {
     width: 100%;
   }
